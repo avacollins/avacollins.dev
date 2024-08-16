@@ -1,15 +1,21 @@
+@font-face{
+  font-family: "Twobit Bold";
+  src: url("/d8d5f79762dbead53f6624c8e9a85893.eot");
+  src: url("/d8d5f79762dbead53f6624c8e9a85893.eot?#iefix")format("embedded-opentype"),
+      url("/d8d5f79762dbead53f6624c8e9a85893.woff")format("woff"),
+      url("/d8d5f79762dbead53f6624c8e9a85893.woff2")format("woff2"),
+      url("/d8d5f79762dbead53f6624c8e9a85893.ttf")format("truetype"),
+      url("/d8d5f79762dbead53f6624c8e9a85893.svg#Twobit Bold")format("svg");
+  font-weight:normal;
+  font-style:normal;
+  font-display:swap;
+}
+
 :root {
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground:#000
-    --background: #edf0f2
-  }
-} */
 
 * {
   box-sizing: border-box;
@@ -28,7 +34,7 @@ body {
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.99;
   background-color: #000;
 }
 
@@ -50,4 +56,12 @@ a.active {
   position: absolute;
   white-space: nowrap; 
   width: 1px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
 }

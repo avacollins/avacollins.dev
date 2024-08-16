@@ -1,9 +1,18 @@
+'use client'
+
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./page.module.css"; 
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
-  var blue = [styles.button, styles.buttonblue].join(" ");
-  var black = [styles.button, styles.buttonblack].join(" ");
+  const blue = [styles.button, styles.buttonblue].join(" ");
+  const black = [styles.button, styles.buttonblack].join(" ");
+  const router = useRouter();
+  
+  function openWork() {
+    router.push('/work');
+  }
+
   return (
     <main className={styles.main}>
       <section className={styles.intro}>
@@ -28,8 +37,8 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.buttongroup}>
-          <input type="button" className={blue} value="Resume" />
-          <input type="button" className={black} value="Portfolio" />
+          <input type="button" className={blue} value="Resume" onClick={openWork} />
+          <input type="button" className={black} value="Email" />
         </div>
       </section>
     </main>
