@@ -2,94 +2,38 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
+  var blue = [styles.button, styles.buttonblue].join(" ");
+  var black = [styles.button, styles.buttonblack].join(" ");
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <section className={styles.intro}>
+        <div className={styles.selfie}>
+          <div className={styles.selfiebg}></div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+        <div className={styles.logo}>
+          <Image src="/logo.svg" alt="logo" fill />
+        </div>
+      </section>
+      <section className={styles.about}>
+        <div className={styles.abouttitle}>
+          <div className={styles.aboutsvg}></div>
+        </div>
+        <div className={styles.abouttext}>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          Software engineer with more than seven years 
+          of full-stack and over a decade of frontend experience. 
+          Passionate about
+          rapid devlopment, iterative scaling, 
+          and continuous deployment. Proficient in 
+          project management, user experience, accessibility, 
+          developer operations, documentation, team and community building.
           </p>
-        </a>
-      </div>
+        </div>
+        <div className={styles.buttongroup}>
+          <input type="button" className={blue} value="Resume" />
+          <input type="button" className={black} value="Portfolio" />
+        </div>
+      </section>
     </main>
   );
 }
