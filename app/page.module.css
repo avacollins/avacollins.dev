@@ -13,7 +13,7 @@
   align-items: center;
   width: 50%;
   padding-top: 48px;
-  padding-bottom: 48px;
+  padding-bottom: 24px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -48,12 +48,16 @@
 
 .about {
   flex-direction: column;
+  background-color: #edf0f2;
+  padding-top: 0;
+  min-height: 725px;
 }
 
 .abouttitle {
   align-self: flex-start;
   width: 100%;
   height: 35%;
+  min-height: 200px;
 }
 
 .aboutsvg {
@@ -67,18 +71,21 @@
 
 .abouttext {
   align-self:center;
-  width: 85%;
+  width: 75%;
   text-align: center;
   padding-bottom: 64px;
+  font-size: 18px;
+  line-height: 1.99;
 }
 
 .buttongroup {
   align-self: flex-end;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100px;
+  min-height: 150px;
 }
 
 
@@ -107,6 +114,7 @@
   white-space: nowrap;
   width: 35%;
   min-width: 150px;
+  height: 50px;
 }
 
 .buttonblue {
@@ -141,7 +149,7 @@
   transform: translate(2px, 2px);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 740px), (max-height: 725px) {
   .main {
     flex-direction: column;
     min-height: 1200px;
@@ -168,11 +176,18 @@
   }
 
   .abouttext p {
-    font-size: 18px;
+    line-height: 1.5;
   }
 
+  .buttongroup {
+    flex-direction: column;
+  }
   .button {
-    padding: 12px 50px;
+    display: block;
+    width: 65%;
+    margin-bottom: 21px;
   }
 
 }
+
+

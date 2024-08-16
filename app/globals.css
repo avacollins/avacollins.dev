@@ -29,7 +29,7 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   line-height: 1.5;
-  background-color: #edf0f2;
+  background-color: #000;
 }
 
 a {
@@ -39,4 +39,15 @@ a {
 
 a.active {
   color: red
+}
+
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
 }
