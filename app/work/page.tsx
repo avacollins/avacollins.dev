@@ -1,7 +1,13 @@
-import { title } from "process";
 import styles from "./page.module.css";
-import { link } from "fs";
 import Image from "next/image";
+import React from "react";
+
+type WorkItem = {
+  title: string;
+  description: string;
+  image: string;
+  link: string | undefined;
+};
 
 const worklist = [
   {
@@ -23,7 +29,7 @@ const worklist = [
     description:
       "Sansar is a social virtual reality platform that allows users to create, share, and monetize their own VR experiences.",
     image: "sansar.png",
-    link,
+    link: "/work/sansar",
   },
   {
     title: "Apollo",
@@ -43,7 +49,7 @@ const worklist = [
     title: "Nordstrom",
     description: "Nordstrom is an American luxury department store chain.",
     image: "nordstrom.png",
-    link,
+    link: "/work/nordstrom",
   },
   {
     title: "Disney",
@@ -61,22 +67,20 @@ const worklist = [
   },
 ];
 
-const halfcard = [styles.card, styles.threequartercard].join(" ");
+const firstworkcard = [styles.workcard, styles.threequartercard].join(" ");
 
-const FirstWorkItem = ({ title, description, image, link }) => {
+const FirstWorkItem = ({ title, description, image }: WorkItem) => {
   return (
-    <div className={styles.workitem}>
-      <div className={styles.worktitle}>
+    <div className={styles.item}>
+      <div className={styles.title}>
         <h1>WORK</h1>
       </div>
-      <div className={halfcard}>
+      <div className={firstworkcard}>
+        <div className={styles.toggle}>
+          <span className={styles.expand}></span>
+        </div>
         <div className={styles.logo}>
-          <Image
-            src={`/work/${image}`}
-            alt={description}
-            style={{ objectFit: "contain" }}
-            fill
-          />
+          <Image src={`/work/${image}`} alt={description} fill />
         </div>
         <h2>{title}</h2>
       </div>
@@ -84,10 +88,15 @@ const FirstWorkItem = ({ title, description, image, link }) => {
   );
 };
 
-const WorkItem = ({ title, description, image, link }) => {
+const FirstPlayItem = ({ title, description, image, link }: WorkItem) => {};
+
+const WorkItem = ({ title, description, image }: WorkItem) => {
   return (
-    <div className={styles.workitem}>
-      <div className={styles.card}>
+    <div className={styles.item}>
+      <div className={styles.workcard}>
+        <div className={styles.toggle}>
+          <span className={styles.expand}></span>
+        </div>
         <div className={styles.logo}>
           <Image
             src={`/work/${image}`}
@@ -104,25 +113,32 @@ const WorkItem = ({ title, description, image, link }) => {
 
 const WorkPage = () => {
   return (
-    <section className={styles.work}>
-      <div className={styles.workgrid}>
-        <FirstWorkItem
-          title={worklist[0].title}
-          description={worklist[0].description}
-          image={worklist[0].image}
-          link={worklist[0].link}
-        />
-        {worklist.slice(1).map((work) => (
-          <WorkItem
-            title={work.title}
-            description={work.description}
-            image={work.image}
-            link={work.link}
-            key={work.title}
+    <React.Fragment>
+      <section className={styles.work}>
+        <div className={styles.grid}>
+          <FirstWorkItem
+            title={worklist[0].title}
+            description={worklist[0].description}
+            image={worklist[0].image}
+            link={worklist[0].link}
           />
-        ))}
-      </div>
-    </section>
+          {worklist.slice(1).map((work) => (
+            <WorkItem
+              title={work.title}
+              description={work.description}
+              image={work.image}
+              link={work.link}
+              key={work.title}
+            />
+          ))}
+        </div>
+      </section>
+      <section className={styles.play}>
+        <div className={styles.grid}>
+          <div className={styles.item}></div>
+        </div>
+      </section>
+    </React.Fragment>
   );
 };
 
