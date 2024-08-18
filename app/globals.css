@@ -1,14 +1,15 @@
-@font-face{
+@font-face {
   font-family: "Twobit Bold";
-  src: url("/d8d5f79762dbead53f6624c8e9a85893.eot");
-  src: url("/d8d5f79762dbead53f6624c8e9a85893.eot?#iefix")format("embedded-opentype"),
-      url("/d8d5f79762dbead53f6624c8e9a85893.woff")format("woff"),
-      url("/d8d5f79762dbead53f6624c8e9a85893.woff2")format("woff2"),
-      url("/d8d5f79762dbead53f6624c8e9a85893.ttf")format("truetype"),
-      url("/d8d5f79762dbead53f6624c8e9a85893.svg#Twobit Bold")format("svg");
-  font-weight:normal;
-  font-style:normal;
-  font-display:swap;
+  src: url("/fonts/d8d5f79762dbead53f6624c8e9a85893.eot");
+  src: url("/fonts/d8d5f79762dbead53f6624c8e9a85893.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/d8d5f79762dbead53f6624c8e9a85893.woff") format("woff"),
+    url("/fonts/d8d5f79762dbead53f6624c8e9a85893.woff2") format("woff2"),
+    url("/fonts/d8d5f79762dbead53f6624c8e9a85893.ttf") format("truetype"),
+    url("/fonts/d8d5f79762dbead53f6624c8e9a85893.svg#Twobit Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -44,17 +45,16 @@ a {
 }
 
 a.active {
-  color: red
+  color: red;
 }
 
-
 .sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   width: 1px;
 }
 
@@ -63,5 +63,4 @@ a.active {
     font-size: 18px;
     line-height: 1.6;
   }
-  
 }
