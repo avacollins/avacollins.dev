@@ -81,7 +81,7 @@ export default function Home() {
           >
             <div className={styles.selfiebg}></div>
           </div>
-          <div className={styles.logo}>
+          <div className={styles.hero}>
             <Image src="/logo.svg" alt="ava collins dot dev" fill />
           </div>
         </section>
@@ -152,6 +152,21 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <footer className={styles.footer}>
+        <h3>
+          “Trying to define yourself is like trying to bite your own teeth.”-
+          Alan Watts
+        </h3>
+        <div className={styles.ouroboros}>
+          <Image
+            src="/ouroboros.png"
+            alt="An image of a serpent eating it's own tail, also called the Ouroboros."
+            style={{ objectFit: "contain" }}
+            fill
+          />
+        </div>
+      </footer>
     </React.Fragment>
   );
 }
