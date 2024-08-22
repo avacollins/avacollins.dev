@@ -131,13 +131,13 @@
 }
 
 .button:hover {
-  background-color: #fff;
+  background-color: #ff00ff;
   color: #000;
   text-decoration: none;
 }
 
 .button:active {
-  background-color: #ff00ff;
+  background-color: #fff;
   outline: 0;
 }
 
@@ -322,6 +322,8 @@
   letter-spacing: 3px;
   font-weight: normal;
   color: #0ff;
+  margin-top: 20%;
+  margin-bottom: 5%;
 }
 
 .ouroboros {

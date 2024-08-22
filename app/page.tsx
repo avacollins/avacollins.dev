@@ -4,8 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-import { playlist, worklist } from "./constants";
-
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -13,8 +11,12 @@ export default function Home() {
   const black = [styles.button, styles.buttonblack].join(" ");
   const router = useRouter();
 
-  function openWork() {
-    router.push("/work");
+  function navResume() {
+    router.push("/resume");
+  }
+
+  function connect() {
+    window.location.href = "https://www.linkedin.com/in/avacollins-dev/";
   }
 
   type Item = {
@@ -93,11 +95,11 @@ export default function Home() {
           </div>
           <div className={styles.abouttext}>
             <p>
-              Innovative Software Engineer with over a decade of experience
-              creating applications for retail, education and games. Skilled in
-              frontend architecture, rapid development, iterative scaling,
-              continuous delivery, accessibility, user experience, developer
-              operations, documentation and community building.
+              Innovative Web Engineer with a long history of creating
+              interactive experiences for retail, education and games. Skilled
+              in frontend architecture, rapid prototyping to MVP, accessibility,
+              user experience, developer operations, documentation and user
+              support.
             </p>
           </div>
           <div className={styles.buttongroup}>
@@ -105,53 +107,17 @@ export default function Home() {
               type="button"
               className={blue}
               value="Resume"
-              onClick={openWork}
+              onClick={navResume}
             />
-            <input type="button" className={black} value="Email" />
+            <input
+              type="button"
+              className={black}
+              value="Connect"
+              onClick={connect}
+            />
           </div>
         </section>
       </main>
-      <section className={styles.work}>
-        <div className={styles.grid}>
-          <FirstItem
-            title={worklist[0].title}
-            name={worklist[0].name}
-            description={worklist[0].description}
-            image={worklist[0].image}
-            link={worklist[0].link}
-          />
-          {worklist.slice(1).map((work) => (
-            <Item
-              name={work.name}
-              description={work.description}
-              image={work.image}
-              link={work.link}
-              key={work.title}
-            />
-          ))}
-        </div>
-      </section>
-
-      <section className={styles.play}>
-        <div className={styles.grid}>
-          <FirstItem
-            title={playlist[0].title}
-            name={playlist[0].name}
-            description={playlist[0].description}
-            image={playlist[0].image}
-            link={playlist[0].link}
-          />
-          {playlist.slice(1).map((play) => (
-            <Item
-              name={play.name}
-              description={play.description}
-              image={play.image}
-              link={play.link}
-              key={play.title}
-            />
-          ))}
-        </div>
-      </section>
 
       <footer className={styles.footer}>
         <h3>
