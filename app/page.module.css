@@ -89,61 +89,6 @@
   min-height: 150px;
 }
 
-.button {
-  appearance: button;
-  background-color: #000;
-  border: 0;
-  background-image: none;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: #0ff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 900;
-  line-height: 20px;
-  margin: 0 15px;
-  overflow: visible;
-  text-align: center;
-  text-transform: none;
-  touch-action: manipulation;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  width: 35%;
-  min-width: 150px;
-  height: 50px;
-}
-
-.buttonblue {
-  background-color: #0ff;
-  color: #000;
-}
-
-.buttonblack {
-  background-color: #000;
-  color: #0ff;
-}
-
-.button:focus {
-  text-decoration: none;
-}
-
-.button:hover {
-  background-color: #ff00ff;
-  color: #000;
-  text-decoration: none;
-}
-
-.button:active {
-  background-color: #fff;
-  outline: 0;
-}
-
-.button:not([disabled]):active {
-  transform: translate(2px, 2px);
-}
 
 @media screen and (max-width: 740px), (max-height: 725px) {
   .main {

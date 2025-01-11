@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { Button } from "../stories/Button"
 
 import styles from "./page.module.css";
 
@@ -103,18 +104,8 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.buttongroup}>
-            <input
-              type="button"
-              className={blue}
-              value="Resume"
-              onClick={navResume}
-            />
-            <input
-              type="button"
-              className={black}
-              value="Connect"
-              onClick={connect}
-            />
+            <Button label="Resume" onClick={navResume} primary />
+            <Button label="Connect" onClick={connect} />
           </div>
         </section>
       </main>
