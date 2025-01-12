@@ -1,0 +1,16 @@
+.selfie {
+    display: inline-flex;
+    align-self: flex-start;
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.selfiebg {
+    background-image: url(/vintage-ai.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}

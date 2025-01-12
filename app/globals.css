@@ -1,8 +1,7 @@
 @font-face {
   font-family: "Twobit Bold";
   src: url("/fonts/d8d5f79762dbead53f6624c8e9a85893.eot");
-  src: url("/fonts/d8d5f79762dbead53f6624c8e9a85893.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("/fonts/d8d5f79762dbead53f6624c8e9a85893.eot?#iefix") format("embedded-opentype"),
     url("/fonts/d8d5f79762dbead53f6624c8e9a85893.woff") format("woff"),
     url("/fonts/d8d5f79762dbead53f6624c8e9a85893.woff2") format("woff2"),
     url("/fonts/d8d5f79762dbead53f6624c8e9a85893.ttf") format("truetype"),
@@ -56,6 +55,15 @@ a.active {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  min-width: 300px;
+  height: 100vh;
+  min-height: 600px;
 }
 
 @media screen and (min-width: 768px) {
