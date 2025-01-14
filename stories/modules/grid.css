@@ -1,0 +1,42 @@
+.work,
+.play {
+    width: 100vw;
+    min-width: 300px;
+    display: flex;
+    padding: 48px 2rem;
+    background-color: #0ff;
+}
+
+.play {
+    background-color: #ff00ff;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr));
+}
+
+.play .card h2 {
+    color: #ff00ff;
+}
+
+@media screen and (max-width: 650px) {
+    .grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(60vw, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 920px) {
+    .grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+        gap: 1rem;
+    }
+
+
+}
