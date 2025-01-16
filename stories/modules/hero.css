@@ -13,13 +13,16 @@
 .intro {
     display: flex;
     flex-direction: column;
+    height: 100vh;
     background-color: black;
 }
 
 .flair {
     position: relative;
     width: 100%;
-    height: 40%;
+    height: 25vh;
+    min-height: 200px;
+    margin-top: 1rem;
 }
 
 .about {
@@ -50,8 +53,12 @@
     width: 75%;
     text-align: center;
     padding-bottom: 64px;
-    font-size: 18px;
-    line-height: 1.99;
+    margin-top: -1rem;
+}
+
+.abouttext p {
+    font-size: 1.25rem;
+    color: #000;
 }
 
 .buttongroup {
@@ -67,30 +74,33 @@
 @media screen and (max-width: 740px) {
     .main {
         flex-direction: column;
-        min-height: 1200px;
+        min-height: fit-content;
     }
 
     .about {
         width: 100%;
+        min-width: 300px;
+        min-height: 100vh;
     }
 
     .intro {
         width: 100%;
-        height: 40%;
+        height: 60vh;
         flex-direction: column-reverse;
+        padding-top: 0;
+    }
+
+    .flair {
+        margin-top: 0;
     }
 
     .hero {
         width: 125%;
-        height: 50%;
+        height: 50vh;
     }
 
     .abouttitle {
-        min-height: 100px;
-    }
-
-    .abouttext p {
-        line-height: 1.5;
+        min-height: 30vh;
     }
 
     .buttongroup {

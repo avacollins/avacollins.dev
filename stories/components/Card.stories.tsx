@@ -9,7 +9,7 @@ const meta = {
     decorators: [
         (Story) => (
             <div className="main">
-                <div style={{ display: 'flex', backgroundColor: '#666', width: '20vw', padding: '48px 2rem' }}>
+                <div style={{ display: 'flex', backgroundColor: '#666', width: '100vw', padding: '48px 2rem' }}>
                     <Story />
                 </div>
             </div >
@@ -37,15 +37,5 @@ export const Default: Story = {
         description: 'This is a demo of a card.',
         image: '/work/sansar/logo.png',
         isResponsive: false,
-    }
-}
-
-export const Title: Story = {
-    args: {
-        title: 'Title',
-        name: 'Demo',
-        description: 'This is a demo of a card.',
-        image: '/work/sansar/logo.png',
-        isResponsive: true,
     }
 }

@@ -1,7 +1,6 @@
 .work,
 .play {
     width: 100vw;
-    min-width: 300px;
     display: flex;
     padding: 48px 2rem;
     background-color: #0ff;
@@ -13,8 +12,10 @@
 
 .grid {
     width: 100%;
+    min-width: 300px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr));
+    grid-template-rows: min-content;
 }
 
 .play .card h2 {
