@@ -29,7 +29,7 @@ export const Default: Story = {
             <React.Fragment>
                 <BackgroundImage url="/work/expedia/expediaVAC.png" />
             </React.Fragment>),
-        anchor: 'one'
+        name: 'one'
     }
 }
 
@@ -44,6 +44,6 @@ export const Right: Story = {
             <React.Fragment>
                 <BackgroundImage url="/work/expedia/expediaVAC.png" />
             </React.Fragment>),
-        anchor: 'two'
+        name: 'two'
     }
 }

@@ -4,7 +4,7 @@ export interface BackgroundProps {
     /** url - background image url */
     url: string;
 }
-export const BackgroundImage = ({ url, key }: BackgroundProps) => {
+export const BackgroundImage = ({ url }: BackgroundProps) => {
     const style = {
         width: '100%',
         height: '100%',
