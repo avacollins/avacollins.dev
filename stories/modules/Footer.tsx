@@ -2,13 +2,20 @@ import React from "react";
 import Image from "next/image";
 import "./footer.css"
 
-export const Footer = () => {
+export interface FooterProps {
+    /** tagline - Line of text above footer image*/
+    tagline?: string;
+}
+
+export const Footer = ({ tagline }: FooterProps) => {
+    const footertext = tagline ? (
+        <h3>
+            {tagline}
+        </h3>
+    ) : (<span />)
     return (
         <footer className="footer">
-            <h3>
-                “Trying to define yourself is like trying to bite your own teeth.”-
-                Alan Watts
-            </h3>
+            {footertext}
             <div className="ouroboros">
                 <Image
                     src="/ouroboros.png"

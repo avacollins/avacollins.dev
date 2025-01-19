@@ -3,6 +3,7 @@
     height: max-content;
     flex-direction: row;
     width: 100vw;
+    margin-top: 2.4rem;
 }
 
 .article.right {

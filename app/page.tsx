@@ -3,6 +3,9 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import { Hero } from "../stories/modules/Hero";
 import { Footer } from "../stories/modules/Footer";
+import { Grid } from "../stories/modules/Grid";
+import { Card } from '../stories/components/Card';
+import { worklist } from './constants'
 
 export default function Home() {
   const router = useRouter();
@@ -14,6 +17,19 @@ export default function Home() {
   function navConnect() {
     window.location.href = "https://www.linkedin.com/in/avacollins-dev/";
   }
+
+  const work = worklist.map(((exp, i) => {
+    const link = `/work#${exp.name.toLowerCase()}`
+    if (i === 0) {
+      return (
+        <Card title="work" name={exp.name} description={exp.description} image={exp.image} link={link} key={exp.name} />
+      )
+    }
+    return (
+      <Card name={exp.name} description={exp.description} image={exp.image} link={link} key={exp.name} />
+    )
+  }))
+
 
   return (
     <React.Fragment>
@@ -27,7 +43,10 @@ export default function Home() {
           resume={navResume}
           connect={navConnect} />
       </main>
-      <Footer />
+      <Grid style="work">
+        {work}
+      </Grid>
+      <Footer tagline='“Trying to define yourself is like trying to bite your own teeth.”- Alan Watts' />
     </React.Fragment >
   );
 }
