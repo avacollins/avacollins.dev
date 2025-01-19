@@ -26,11 +26,11 @@ export const worklist: WorklistProp[] = [
       title: 'Expedia Group Virtual Agent Chat',
       text: [
         `The Conversational Experiences Platform manages white label Virtual Agent Chat AI integrations for Expedia brands. The VAC can handle common customer requests and answer internal questions for human agents during support sessions. Brands can customize capabilities using internal tools and configurations.`,
-        `I supported internal brands by investigating issues using APM tools to identify and trace requests across the system. After each investigation, metrics reports were shared with remediation recommendations for various teams across different organizations and time zones. `
+        `My initiatives supported internal brands by investigating issues using APM tools to identify and trace requests across the distributed system. After each investigation, metrics reports were shared with remediation recommendations for various teams across different organizations and time zones. `
       ],
       media: {
         type: 'image',
-        url: '/work/expedia/expediaVac.png'
+        url: '/work/expedia/expediaVAC.png'
       }
     }]
   },
@@ -43,7 +43,7 @@ export const worklist: WorklistProp[] = [
       title: 'Porch Group & Inspection Support NetwoRk Mobile apps',
       text: [
         `Served as a catalyst for Porch Group’s growth by establishing the groundwork for two mobile development teams proficient in React to jump start two React Native applications.`,
-        `Initially overseeing the engineering efforts for both teams simultaneously, both teams were walked through how to setup development environments and asses critical launch components to satisfy existing cutsomers making a change to a new application.`,
+        `Initially overseeing the engineering efforts for both apps simultaneously, both teams were walked through how to setup development environments and asses critical launch components to compel existing customers to use the new applications.`,
         ` My time was divided between equally between scrum master, devops, writing and reviewing code.`
       ],
       media: {
@@ -60,7 +60,8 @@ export const worklist: WorklistProp[] = [
     details: [
       {
         title: 'Sansar Virtual Reality Platform',
-        text: [`Linden Lab, a pioneer in virtual worlds, endeavored to build a platform for creating and monetizing 3D content called Project Sansar. I spent four years growing as a developer and a human while helping to grow Sansar as a ‘place’ to be with other creative technologists from around the globe in three dimensional virtual reality. Campfires, concerts, games, classrooms, businesses and hackers, nothing will ever compare. I hold so much gratitude for the investors that allowed artists and scientists to lead and build this incredibly ahead of it’s time platform and for my coworkers that united for a common goal, truly an amazing team to be a part of.`],
+        text: [
+          `Linden Lab, a pioneer in virtual worlds, endeavored to build a platform for creating and monetizing 3D content called Project Sansar. I spent four years growing as a developer and a human while helping to grow Sansar as a ‘place’ to be. Campfires, concerts, games, classrooms, businesses and hackers, nothing will ever compare. I hold so much gratitude for the investors that allowed artists and scientists to lead and build this incredibly ahead of it’s time platform and for my coworkers that united for a common goal, truly an amazing team to be a part of.`],
         media: {
           type: 'image',
           url: '/work/sansar/homepage-evolution.png'
@@ -71,7 +72,7 @@ export const worklist: WorklistProp[] = [
         text: [
           `I primarily contributed to the web frontend of Sansar. As one of five web engineers, I helped bring to life prelaunch marketing and supporting applications for accessing the game through Beta and launch.`,
           `Sansar’s web was built using microservices for user account management, the web store, and the game atlas. We designed a modular UI library themed as components shared across different frontend applications in a federated system.`,
-          `Once the web was templatized, the team cross-trained. Our microservice architecture allowed for easily spinning up new apps using scripts and Docker configurations. This was my first experience with containers, and it remains my preferred approach for multi-tenant web application development.`
+          `Once the web was templatized, the team cross-trained. Our microservice architecture allowed for easily spinning up new apps using scripts and Docker configurations.`
         ],
         media: {
           type: 'image',
@@ -92,9 +93,8 @@ export const worklist: WorklistProp[] = [
       {
         title: 'Sansar Mobile',
         text: [
-          `Sansar Mobile application was an extension of Sansar virtual events platform that added a time based  experience that could be viewed on a mobile phone as well as attended on desktop or VR HMD.`,
-          `Our first event was the renowned Glastonbury concert series. The 2020 Shangri - La festival went virtual for the  Lost Horizons series of artists performing in Sansar to a live, virtual, audience.`,
-          `This event was extravagant, custom stages were built to replicate the outdoor experience Glastonbury audiences were accustomed to attending IRL, every detail was professionally crafted to AAA game quality at the time. Merchandise, coined ‘Verch’,  was designed and sold to concert goers through the store and injected some earnings into resident wallets as well as introduced a whole new audience to the platform. It was said that Fatboy Slim was hanging out on the dance floor completely anonymous enjoying himself as much as everyone else.`,
+          `Sansar Mobile application was an extension of Sansar virtual events platform that added the ability to view events from iPhone and Andriod. In reaction to Covid our first show was part of the renowned Glastonbury concert series in England. The 2020 Shangri - La festival went full virtual reality for Lost Horizon shows, artists performed via avatars in Sansar to a live, virtual, audience.`,
+          `The event was extravagant, custom stages were built to replicate the outdoor experience, state of the art image capture technology was used to stream performers, every detail was professionally crafted to AAA game quality at the time. Merchandise, coined ‘Verch’,  was designed and sold to concert goers through the store and injected some earnings into resident wallets as well as introduced a whole new audience to the platform. It was rumored that Fatboy Slim was hanging out on the dance floor completely anonymous enjoying himself as much as everyone else.`,
           `Unfortunately this event would be the last of such proportions under Linden Lab. The high cost of production and maintenance was not sustainable as the barrier to entry for VR hardware remained high and the number of daily active users remained low.`
         ],
         media: {
@@ -113,7 +113,7 @@ export const worklist: WorklistProp[] = [
       title: 'Apollo Education Career Bootcamp',
       text: [
         `Apollo Education Group was a small SASS company that was acquired by University of Phoenix to build educational software products to be used by their students. I worked on a small team of three engineers where I used Angular and D3 javascript frameworks to build highly interactive animations and data visualizations.`,
-        `Career Bootcamp was a multi tenant web application that helped students get their career started after graduation. Through a series of interactive exercises job seeking skills were taught in a video series and supplemented with written articles and online tasks to be completed on the LinkedIn platform to build a profile and resume. Analytics were added on the application and it’s third party integrations to measure success rates for the applicants as they searched for new jobs.`
+        `Career Bootcamp was a multi tenant web application that helped students get their career started after graduation. Through a series of interactive exercises job seeking skills were taught in a video series and supplemented with written articles and online tasks to be completed on the LinkedIn platform to build a profile and resume. Analytics were added on the application and its third party integrations to measure success rates for the applicants as they searched for new jobs.`
       ],
       media: {
         type: 'image',
@@ -146,9 +146,7 @@ export const worklist: WorklistProp[] = [
     details: [{
       title: 'Nordstrom Online',
       text: [
-        `Nordstrom has a fantastic reputation for highest quality goods and best in class customer satisfaction in retail clothing. `,
-        `During my time at Nordstrom I built interactive javaScript widgets for the retail site. A large part of my job was building prototypes to be used in usability testing with customers where design approaches to making shopping better were shared with customers for their feedback. `,
-        `I also got the opportunity to put my WordPress theming skills to work in an organic collaboration with the creative services team. I themed their single blog at the time, The Thread, with the Thesis SEO theme to help them boost search rankings. They used this template to support the launch of four other blogs with the same theme.`
+        `Supported the Nordstrom frontend by developing interactive shopping experiences that enhance the overall user experience. Collaborated closely with UX usability groups and other data-driven feedback mechanisms to ensure that the features were prepared and tested thoroughly. `
       ],
       media: {
         type: 'image',
