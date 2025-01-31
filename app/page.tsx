@@ -35,11 +35,10 @@ export default function Home() {
     <React.Fragment>
       <main className="main">
         <Hero
-          abouttext="Ambitious hacker with a long history of bringing to life
+          abouttext="Ambitious pixel pusher with a long history of bringing to life
               interactive experiences for retail, education and games. Skilled
-              in prototype to MVP launches, frontend architecture, build pipelines with automated testing, web accessibility and
-              user experience requirements, third party integrations, performance and security monitoring, 
-              documentation and user support."
+              in prototype to MVP launches, frontend architecture, automated testing, web accessibility,
+              user experience, performance monitoring, documentation and user support."
           resume={navResume}
           connect={navConnect} />
       </main>

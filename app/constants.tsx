@@ -93,8 +93,8 @@ export const worklist: WorklistProp[] = [
       {
         title: 'Sansar Mobile',
         text: [
-          `Sansar Mobile application was an extension of Sansar virtual events platform that added the ability to view events from iPhone and Andriod. In reaction to Covid our first show was part of the renowned Glastonbury concert series in England. The 2020 Shangri - La festival went full virtual reality for Lost Horizon shows, artists performed via avatars in Sansar to a live, virtual, audience.`,
-          `The event was extravagant, custom stages were built to replicate the outdoor experience, state of the art image capture technology was used to stream performers, every detail was professionally crafted to AAA game quality at the time. Merchandise, coined ‘Verch’,  was designed and sold to concert goers through the store and injected some earnings into resident wallets as well as introduced a whole new audience to the platform. It was rumored that Fatboy Slim was hanging out on the dance floor completely anonymous enjoying himself as much as everyone else.`,
+          `Sansar Mobile application was an extension of Sansar virtual events platform adding the ability to view events from iPhone and Andriod. Our first show was part of the renowned Glastonbury concert series in England. The 2020 Shangri - La festival went full virtual reality for Lost Horizon shows, artists performed via avatars in Sansar to a live, virtual, audience.`,
+          `The event was extravagant, custom stages were built to replicate the outdoor experience, state of the art image capture technology was used to stream performers, every detail was professionally crafted to AAA game quality. Merchandise, coined ‘Verch’,  was designed and sold to concert goers through the store and injected some earnings into resident wallets as well as introduced a whole new audience to the platform. It was rumored that Fatboy Slim was hanging out on the dance floor completely anonymous enjoying himself as much as everyone else.`,
           `Unfortunately this event would be the last of such proportions under Linden Lab. The high cost of production and maintenance was not sustainable as the barrier to entry for VR hardware remained high and the number of daily active users remained low.`
         ],
         media: {
@@ -129,9 +129,8 @@ export const worklist: WorklistProp[] = [
     details: [{
       title: 'Amazon Creative Services',
       text: [
-        `Amazon’s retail storefront underwent a significant transformation thanks to the Amazon Creative Services UX team. They improved the look and feel of the store and patented UX patterns, such as mega dropdowns, that are now common on large retail websites.`,
-        `While working with Creative Services I assisted UX designers in demonstrating rapid prototyping of dynamic widgets that pulled data from the recommendations engine. The designers coded the widget layouts and styling with instructions for behavior to be integrated into the existing Amazon stack via CMS-controlled slots that could contain server scripts for accessing internal Amazon services and data.`,
-        `The widgets were designed assuming dynamic backend data for user choices and product browsing, but the data was actually static upon page load. To address this, we hacked an AJAX proxy page via CMS to expose internal APIs by converting PERL query responses into JSON text on a page. This was before the fetch API was added to browsers, and asynchronous activity was more laborious to achieve. However, trusted iframes and JSON-formatted text were easy to grab from the DOM and parse into plain JavaScript in order to make dynamic widgets that required no page reloads.`
+        `Amazon Creative Services team improved the look and feel of the amazon.com retail store and patented UX patterns, such as mega dropdowns, that are now commonplace on retail websites.`,
+        `As a team member I assisted UX designers in demonstrating rapid prototyping of dynamic widgets that pulled live data from the recommendations engine. The widgets were designed assuming dynamic backend data for user choices and product browsing, but the data was actually static upon page load. To address this, we hacked an AJAX proxy page via CMS to expose internal APIs by converting PERL query responses into JSON text on a page. This was before the fetch API was added to browsers, and asynchronous activity was more laborious to achieve. However, trusted iframes and JSON-formatted text were easy to grab from the DOM and parse into plain JavaScript in order to make dynamic widgets that required no page reloads.`
       ],
       media: {
         type: 'image',
@@ -146,7 +145,7 @@ export const worklist: WorklistProp[] = [
     details: [{
       title: 'Nordstrom Online',
       text: [
-        `Supported the Nordstrom frontend by developing interactive shopping experiences that enhance the overall user experience. Collaborated closely with UX usability groups and other data-driven feedback mechanisms to ensure that the features were prepared and tested thoroughly. `
+        `Supported the Nordstrom frontend by developing interactive shopping experiences that enhance the overall user experience. Collaborated closely with UX department to conduct usability tests and other data-driven feedback mechanisms to ensure that the features were vetted thoroughly. `
       ],
       media: {
         type: 'image',
