@@ -37,7 +37,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 const Resume = () => {
-  const [file, setFile] = useState<string>("./Resume.pdf");
+  const [file, setFile] = useState<string>("./WebResume.pdf");
   const [numPages, setNumPages] = useState<number>();
 
   const options = {
