@@ -95,9 +95,6 @@ export const worklist: WorklistProp[] = [
         }, {
           type: 'video',
           url: 'https://www.youtube.com/embed/Ow80IEhEgMQ'
-        }, {
-          type: 'video',
-          url: 'https://www.youtube.com/embed/DJSEqMVChdE'
         }]
       },
       {
@@ -110,6 +107,9 @@ export const worklist: WorklistProp[] = [
         media: [{
           type: 'image',
           url: '/work/sansar/iphone-screenshots.jpg'
+        }, {
+          type: 'image',
+          url: 'work/sansar/ticket_test.jpg'
         }]
       },
     ]

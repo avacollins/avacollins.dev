@@ -11,7 +11,8 @@ export const BackgroundImage = ({ url }: BackgroundProps) => {
         backgroundImage: `url(${url})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '50% 50%',
-        backgroundSize: 'contain'
+        backgroundSize: 'contain',
+        marginBottom: '1rem'
     }
     return (
         <div style={style}></div>
