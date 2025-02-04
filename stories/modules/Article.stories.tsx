@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { BackgroundImage } from '../components/BackgroundImage';
+import { YouTubeEmbed } from '../components/YouTubeEmbed';
 import { Article } from './Article';
 
 const meta = {
@@ -42,7 +43,11 @@ export const Right: Story = {
         ],
         children: (
             <React.Fragment>
-                <BackgroundImage url="/work/expedia/expediaVAC.png" />
+                <YouTubeEmbed url='https://www.youtube.com/embed/VQAbuIJW-kg' title='Sansar Client Marketplace' />
+                <YouTubeEmbed url='https://www.youtube-nocookie.com/embed/3n4i3Ivnoo4' title='Sansar chat UI' />
+                <YouTubeEmbed url='https://www.youtube-nocookie.com/embed/Ow80IEhEgMQ' title='Sansar Quest UI' />
+                <YouTubeEmbed url='https://www.youtube-nocookie.com/embed/w2-2Qmtmewk' title='Sansar Quest UI' />
+                <YouTubeEmbed url='https://www.youtube.com/embed/DJSEqMVChdE' title='Sansar Codex' />
             </React.Fragment>),
         name: 'two'
     }
