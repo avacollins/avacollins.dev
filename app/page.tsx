@@ -11,7 +11,7 @@ export default function Home() {
   const router = useRouter();
 
   function navResume() {
-    router.push("/resume");
+    window.location.href = "https://github.com/avacollins?tab=repositories&q=&type=public&language=&sort="
   }
 
   function navConnect() {

@@ -32,8 +32,8 @@ export const Hero = ({ abouttext, resume, connect }: HeroProps) => (
                 <p>{abouttext}</p>
             </div>
             <div className="buttongroup">
-                <Button label="Resume" onClick={resume} primary />
-                <Button label="Connect" onClick={connect} />
+                <Button label="GitHub" onClick={resume} primary />
+                <Button label="LinkedIn" onClick={connect} />
             </div>
         </section>
     </React.Fragment>
