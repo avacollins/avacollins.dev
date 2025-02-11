@@ -13,7 +13,7 @@
 .intro {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
 }
 
@@ -29,7 +29,7 @@
     flex-direction: column;
     background-color: #edf0f2;
     padding-top: 0;
-    min-height: 725px;
+    min-height: 1000px;
 }
 
 .abouttitle {
@@ -52,7 +52,7 @@
     align-self: center;
     width: 75%;
     text-align: center;
-    padding-bottom: 64px;
+    padding-bottom: 2rem;
     margin-top: -1rem;
 }
 
@@ -79,7 +79,7 @@
     min-height: 150px;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1200px) {
     .main {
         flex-direction: column;
         min-height: fit-content;
