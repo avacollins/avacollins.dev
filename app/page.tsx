@@ -35,7 +35,7 @@ export default function Home() {
     <React.Fragment>
       <main className="main">
         <Hero
-          abouttext="Ambitious pixel pusher with a long history of bringing to life
+          abouttext="Ambitious hacker with a long history of bringing to life
               interactive experiences for retail, education and games. Skilled
               in prototype to MVP launches, frontend architecture, automated testing, web accessibility,
               user experience, performance monitoring, documentation and user support."
