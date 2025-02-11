@@ -57,8 +57,16 @@
 }
 
 .abouttext p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     color: #000;
+}
+
+.abouttext ul {
+    margin-top: 2rem;
+}
+
+.abouttext li {
+    margin: 1rem 0;
 }
 
 .buttongroup {
