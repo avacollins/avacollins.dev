@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { BackgroundImage } from '../components/BackgroundImage';
 import { YouTubeEmbed } from '../components/YouTubeEmbed';
 import { Article } from './Article';
+import { BASE_URL } from '../constants';
 
 const meta = {
     title: 'modules/Article',
@@ -28,7 +29,7 @@ export const Default: Story = {
         ],
         children: (
             <React.Fragment>
-                <BackgroundImage url="/work/expedia/expediaVAC.png" />
+                <BackgroundImage url={`${BASE_URL}/work/expedia/expediaVAC.png`} />
             </React.Fragment>),
         name: 'one'
     }

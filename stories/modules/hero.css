@@ -40,7 +40,7 @@
 }
 
 .aboutsvg {
-    background-image: url(/about.svg);
+    background-image: url(https://www.avacollins.dev/about.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

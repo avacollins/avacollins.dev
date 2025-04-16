@@ -2,6 +2,7 @@ import React from "react";
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { Card } from "../components/Card"
+import { BASE_URL } from "../constants";
 
 const meta = {
     title: "modules/Card",
@@ -35,7 +36,7 @@ export const Default: Story = {
     args: {
         name: 'Demo',
         description: 'This is a demo of a card.',
-        image: '/work/sansar/logo.png',
+        image: `${BASE_URL}/work/sansar/logo.png`,
         isResponsive: false,
     }
 }

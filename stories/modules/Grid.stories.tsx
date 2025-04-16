@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
+import { BASE_URL } from '../constants';
 
 import { Grid } from "./Grid";
 import { Card } from '../components/Card';
@@ -25,9 +26,9 @@ export const Work: Story = {
         style: 'work',
         children: (
             <React.Fragment>
-                <Card title="work" name="Sansar" image="/work/sansar/logo.png" description='This is a demo' link="#" />
-                <Card name="Real" image="/work/realnetworks/logo.png" description='This is a demo' link="#" />
-                <Card name="Porch" image="/work/porch/logo.png" description='This is a demo' link="#" />
+                <Card title="work" name="Sansar" image={`${BASE_URL}/work/sansar/logo.png`} description='This is a demo' link="#" />
+                <Card name="Real" image={`${BASE_URL}/work/realnetworks/logo.png`} description='This is a demo' link="#" />
+                <Card name="Porch" image={`${BASE_URL}/work/porch/logo.png`} description='This is a demo' link="#" />
             </React.Fragment>
         )
     }
@@ -38,10 +39,10 @@ export const Play: Story = {
         style: 'play',
         children: (
             <React.Fragment>
-                <Card title="play" name="Ophiucus" description="NFT minting decentralized application." image="/play/ophi/logo.png" link="#" isResponsive={true} />
+                <Card title="play" name="Ophiucus" description="NFT minting decentralized application." image={`${BASE_URL}/play/ophi/logo.png`} link="#" isResponsive={true} />
                 <Partial isResponsive={true} />
-                <Card name="Ophiucus" description="NFT minting decentralized application." image="/play/ophi/logo.png" link="#" isResponsive={true} />
-                <Card name="Tarot" description="Tarot card game made with react native, react-dom, storybook and yarn monorepo." image="/play/tarot/logo.png" link="#" />
+                <Card name="Ophiucus" description="NFT minting decentralized application." image={`${BASE_URL}/play/ophi/logo.png`} link="#" isResponsive={true} />
+                <Card name="Tarot" description="Tarot card game made with react native, react-dom, storybook and yarn monorepo." image={`${BASE_URL}/play/tarot/logo.png`} link="#" />
                 <Partial />
             </React.Fragment>
         )

@@ -2,6 +2,7 @@ import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { BackgroundImage } from "./BackgroundImage";
+import { BASE_URL } from '../constants';
 
 const meta = {
     title: 'components/BackgroundImage',
@@ -23,6 +24,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        url: '/work/expedia/expediaVAC.png'
+        url: `${BASE_URL}/work/expedia/expediaVAC.png`
     }
 }
