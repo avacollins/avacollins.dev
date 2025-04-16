@@ -19,7 +19,7 @@ export const Footer = ({ tagline }: FooterProps) => {
             {footertext}
             <div className="ouroboros">
                 <Image
-                    src={`${BASE_URL}/ouroboros.png`}
+                    src='/ouroboros.png'
                     alt="An image of a serpent eating it's own tail, also called the Ouroboros."
                     style={{ objectFit: "contain" }}
                     fill

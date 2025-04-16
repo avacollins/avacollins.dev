@@ -13,10 +13,7 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {}
-
-
-export const Tagline: Story = {
+export const Default: Story = {
     args: {
         tagline: '“Trying to define yourself is like trying to bite your own teeth.”- Alan Watts'
     }
